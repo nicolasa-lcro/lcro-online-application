@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCRO Online Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #005f99;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 700px;
+      background: white;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #007acc;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #005f99;
+    }
+    footer {
+      text-align: center;
+      background-color: #007acc;
+      color: white;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LCRO Online Application and Appointment System</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="application.html">Apply for Certificate</a>
+    <a href="appointment.html">Appointment Schedule</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main>
+    <h2>Application Form</h2>
+    <form>
+      <label>Full Name:</label>
+      <input type="text" name="fullname" required>
+
+      <label>Date of Birth:</label>
+      <input type="date" name="dob" required>
+
+      <label>Type of Certificate:</label>
+      <select name="certificate" required>
+        <option value="">-- Select --</option>
+        <option>Birth Certificate</option>
+        <option>Marriage Certificate</option>
+        <option>Death Certificate</option>
+        <option>Other Civil Registry Certification</option>
+      </select>
+
+      <label>Purpose:</label>
+      <textarea name="purpose" rows="3"></textarea>
+
+      <label>Contact Number:</label>
+      <input type="tel" name="contact">
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Local Civil Registrar's Office | All Rights Reserved
+  </footer>
+</body>
+</html>
